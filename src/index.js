@@ -18,7 +18,7 @@ app.use((req,res,next)=>{
 
 const connectToMongo = async () => {
     try {
-       await mongoose.connect("mongodb://localhost:27017/todo-app")
+       await mongoose.connect("mongodb+srv://admin123:admin123@cluster0.szqpfmo.mongodb.net/todo_app?retryWrites=true&w=majority&appName=Cluster0")
        console.log("<-<-<-<-<-<-<-<- mongoDb successfully connected ->->->->->->->->")
     } catch (error) {
         console.log(">>>>>>>error", error)
